@@ -29,10 +29,7 @@ public class Simulation {
             System.exit(-1);
         } else {thieves = (Integer.parseInt(args[1]) * pop) / 100;}
 
-        if (args[2].equals("t")) {
-            kantianism = true;
-            System.out.println("HAHAHAHAHAHAHAHASHDAS");
-        }
+        if (args[2].equals("t")) {kantianism = true;}
         else if (args[2].equals("f")) {kantianism = false;}
         else {
             System.out.println(usage());
@@ -68,20 +65,22 @@ public class Simulation {
             int citizenSum = 0;
             int thiefSum = 0;
 
-            for (Person p : society) {p.chaseTheBag();}
-            
-            for (int j = 0; j < society.length; j++) {
+            for (int k = 0; k < 52; k++) {
+                for (Person p : society) {p.chaseTheBag();}
+                
+                for (int j = 0; j < society.length; j++) {
 
-                int victim = rand.nextInt(society.length);
-                while (victim == j) {victim = rand.nextInt(society.length);}
+                    int victim = rand.nextInt(society.length);
+                    while (victim == j) {victim = rand.nextInt(society.length);}
 
-                if (!kantianism && !society[j].isThief()) {}
-                else {society[j].steal(society[victim]);}
-            }
+                    if (!kantianism && !society[j].isThief()) {}
+                    else {society[j].steal(society[victim]);}
+                }
 
-            for (Person p : society) {
-                if (p.isThief()) {thiefSum += p.getWealth();} 
-                else if (!p.isThief()) {citizenSum += p.getWealth();}
+                for (Person p : society) {
+                    if (p.isThief()) {thiefSum += p.getWealth();} 
+                    else if (!p.isThief()) {citizenSum += p.getWealth();}
+                }
             }
 
             if (thieves != 0) {thiefAveragesSum += (thiefSum / thieves);}
