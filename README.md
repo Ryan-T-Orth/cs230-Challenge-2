@@ -2,18 +2,18 @@
 
 | Population | Thieves | Categorical Imperative | Citizen Avg | Thief Avg |
 | ---------- | ------- | ---------------------- | ----------- | --------- |
-| 100        | 0       | False                  | 302         | 0         |
-| 1000       | 0       | False                  | 302         | 0         |
-| 1000       | 1       | False                  | 295         | 918       |
-| 1000       | 10      | False                  | 247         | 790       |
-| 1000       | 40      | False                  | 151         | 524       |
-| 1000       | 80      | False                  | 89          | 352       |
-| 1000       | 90      | False                  | 79          | 323       |
-| 1000       | 1       | True                   | 298         | 322       |
-| 1000       | 10      | True                   | 298         | 304       |
-| 1000       | 40      | True                   | 298         | 299       |
-| 1000       | 80      | True                   | 298         | 299       |
-| 1000       | 90      | True                   | 295         | 299       |
+| 100        | 0       | False                  | 15730       | 0         |
+| 1000       | 0       | False                  | 15730       | 0         |
+| 1000       | 1       | False                  | 7528        | 827521    |
+| 1000       | 10      | False                  | 1057        | 147633    |
+| 1000       | 40      | False                  | 244         | 38814     |
+| 1000       | 80      | False                  | 109         | 19491     |
+| 1000       | 90      | False                  | 94          | 17323     |
+| 1000       | 1       | True                   | 15592       | 14973     |
+| 1000       | 10      | True                   | 15605       | 15418     |
+| 1000       | 40      | True                   | 15591       | 15578     |
+| 1000       | 80      | True                   | 15503       | 15607     |
+| 1000       | 90      | True                   | 15088       | 15641     |
 
 ## Analysis
 Without the categorical imperative that allows people to ethically steal, As the 
